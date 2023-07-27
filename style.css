@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: blueviolet;
+}
+.hero {
+  background-image: url("./assets/hero-bg_1920x1080.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  height: 90vh;
+}
+nav {
+  display: flex;
+  padding: 1vw;
+  justify-content: space-between;
+  padding-inline: 10%;
+  align-items: center;
+}
+.logo {
+  height: 4vw;
+}
+.links {
+  display: flex;
+  gap: 2vw;
+}
+.links a {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.2vw;
+  color: white;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+
+nav .links a:hover {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position: center;
+  }
+  .links a {
+    font-size: 2.5vw;
+  }
+}
+
+/* Sticky Nav */
+.sticky-nav {
+  display: flex;
+  align-items: center;
+  padding: 1vw;
+  padding-inline: 10%;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.sticky-nav .logo-name {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.sticky-nav .logo-name h2:nth-child(1) {
+  font-size: 1.5vw;
+  color: #5a5a5a;
+}
+.sticky-nav .logo-name h2:nth-child(2) {
+  font-size: 1.7vw;
+  color: #404f6c;
+}
+
+.sticky-nav .links a {
+  color: #404f6c;
+  border-bottom: 2px solid #404f6c;
+}
+
+/* History */
+.history {
+  background-image: url("./assets/bg2-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -5vw;
+  height: 90vh;
+}
